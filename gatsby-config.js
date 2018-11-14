@@ -1,7 +1,7 @@
 require('dotenv').config();
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Sarah Bixler',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -22,7 +22,7 @@ module.exports = {
       resolve: `gatsby-source-wordpress`,
       options: {
         // your wordpress source
-        baseUrl: `sarahbixlercom.wordpress.com`,
+        baseUrl: `seblr.wordpress.com`,
         protocol: `https`,
         // is it hosted on wordpress.com, or self-hosted?
         hostingWPCOM: true,
@@ -65,19 +65,21 @@ module.exports = {
       // ` will either include or exclude routes ending in `comments` and
       // all routes that begin with `yoast` from fetch.
       // Whitelisted routes using glob patterns
-      // includedRoutes: [
-      //   "**",
-      //   "*",
-      //   "/*/*/categories",
-      //   "/*/*/posts",
-      //   "/*/*/pages",
-      //   "/*/*/media",
-      //   "/*/*/tags",
-      //   "/*/*/taxonomies",
-      //   "/*/*/users",
-      // ],
+      includedRoutes: [
+        "**",
+        "*",
+        "/*/*/categories",
+        "/*/*/posts",
+        "/*/*/pages",
+       
+        "/*/*/tags",
+        "/*/*/taxonomies",
+        "/*/*/users",
+      ],
       // Blacklisted routes using glob patterns
-      // excludedRoutes: [],
+      excludedRoutes: [
+        "/*/*/media",
+      ],
       // use a custom normalizer which is applied after the built-in ones.
       normalizer: function({ entities }) {
         return entities
