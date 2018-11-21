@@ -4,9 +4,13 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import ToDoList from '../components/todo-list'
-import Notes from '../components/notes'
+import Notes from './notes'
+import Trial from './notes-trial'
 class IndexPage extends Component {
+  
 render() {
+  console.log('INDEX DATA', this.props.data);
+  const markdownData= this.props.data;
   const uuidv4 = require('uuid/v4');
   const exampleSites= [
   <a href="https://portfolio.dangercode.net/">Danger Code</a>,
@@ -58,11 +62,31 @@ render() {
     })}
   </ul>
 <ToDoList />
-<Notes />
+<Trial data = { markdownData }/>
+<Notes data = { markdownData } />
     <Link to="/page-2/">Go to page 2</Link>
+    <Link to="/blog/">Blog</Link>
   </Layout>
   )
 }
 }
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            path
+            title
+          }
+        }
+      }
+    }
+  }
+`
