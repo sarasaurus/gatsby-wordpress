@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 // import { graphql } from "gatsby"
-import PostLink from "../components/post-link"
-import styles from '../components/notes.module.css'
+import uuid4 from 'uuid/v4';
+import PostLink from "./post-link";
+import styles from './notes.module.css';
 
-console.log(styles);
+
+console.log('NOTE STYLE:', styles);
 
 // data: {
 //   allMarkdownRemark: { edges }
@@ -16,10 +18,10 @@ const Notes = (props) => {
   // console.log('WHAT DATA BRO', edges);
   const Post = props.data.allMarkdownRemark.edges
     // .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+    .map(edge => <li key={uuid4()}><PostLink key={edge.node.id} post={edge.node} /></li>)
    
 
-  return <div>{Post}</div>
+  return <div><ul>{Post}</ul></div>
 }
 
 export default Notes;

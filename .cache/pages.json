@@ -50,16 +50,6 @@
         "path": "/dev-404-page/"
     },
     {
-        "componentChunkName": "component---src-pages-notes-trial-js",
-        "jsonName": "notes-trial-29f",
-        "path": "/notes-trial/"
-    },
-    {
-        "componentChunkName": "component---src-pages-notes-js",
-        "jsonName": "notes-6e9",
-        "path": "/notes/"
-    },
-    {
         "componentChunkName": "component---src-pages-page-2-js",
         "jsonName": "page-2-fbc",
         "path": "/page-2/"

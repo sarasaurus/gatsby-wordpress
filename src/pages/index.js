@@ -4,8 +4,7 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import ToDoList from '../components/todo-list'
-import Notes from './notes'
-import Trial from './notes-trial'
+import Notes from '../components/notes'
 class IndexPage extends Component {
   
 render() {
@@ -62,7 +61,6 @@ render() {
     })}
   </ul>
 <ToDoList />
-<Trial data = { markdownData }/>
 <Notes data = { markdownData } />
     <Link to="/page-2/">Go to page 2</Link>
     <Link to="/blog/">Blog</Link>
@@ -90,3 +88,4 @@ export const pageQuery = graphql`
     }
   }
 `
+// with graphql queries you must make the query in the top commponent or at the index/app level then pass the results of the query to the child components as props
