@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 import ToDoList from '../components/todo-list'
 import Notes from '../components/notes'
 class IndexPage extends Component {
-  
+  // you only need a to call super (props) if you have a constructor... do you only need a constructor for redux?
 render() {
   console.log('INDEX DATA', this.props.data);
   const markdownData= this.props.data;
