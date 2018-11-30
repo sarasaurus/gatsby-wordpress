@@ -9,6 +9,7 @@ class ToDoList extends Component {
 <div className="todo-list">
 <h4>TODO:</h4>
       <ul>
+          <li className={styles.normal}> Turn list of blog posts into a drop down menu, display the blog post on the page so can scroll through, or maybe create two display options like instagram-- a page of thumbnail/preview links vs a scroll through</li>
           <li>write a function to alphabetize the list of links on this page</li>
           <li className={styles.done}>write a function to generate unique keys.  Check old assignments for reference
             <ul><li>using uuid, ids are generated</li></ul>

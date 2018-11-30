@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import uuid from 'uuid';
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import ToDoList from '../components/todo-list'
@@ -61,10 +61,10 @@ render() {
     })}
   </ul>
 <ToDoList />
-<Notes data = { markdownData } />
-    <Link to="/page-2/">Go to page 2</Link>
-    <br />
+{/* <Notes data = { markdownData } /> */}
     <Link to="/blog/">Blog</Link>
+    <br />
+    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
   )
 }

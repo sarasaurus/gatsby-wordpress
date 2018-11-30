@@ -26,6 +26,11 @@
     },
     {
         "componentChunkName": "component---src-templates-blog-template-js",
+        "jsonName": "blog-notes-ideation-6f4",
+        "path": "/blog/notes-ideation"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-template-js",
         "jsonName": "blog-notes-prototyping-fd2",
         "path": "/blog/notes-prototyping"
     },
