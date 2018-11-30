@@ -2,6 +2,8 @@
 path: "/blog/notes-user-stories-hwk"
 date: "2018-11-15"
 title: "Homework from my UX class, user stories"
+featuredImage:
+  -"./images/user_flow.JPG"
 ---
 ## Who Buys Produce?
   * ~~Chefs~~  

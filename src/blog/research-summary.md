@@ -2,6 +2,8 @@
 path: "/blog/notes-user-research-hwk"
 date: "2018-11-10"
 title: "Homework from my UX class, user research"
+featuredImage:
+  -"./images/user_flow.JPG"
 ---
 # Research Summary
 ### Self Checkout Observations

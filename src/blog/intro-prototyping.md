@@ -2,6 +2,8 @@
 path: "/blog/notes-prototyping"
 date: "2018-11-28"
 title: "Introduction to Prototyping"
+featuredImage:
+  -"./images/user_flow.JPG"
 attachments: 
   -"./images/user_flow.JPG"
   -"./images/user_problems_1.JPG"

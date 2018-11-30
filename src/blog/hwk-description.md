@@ -2,6 +2,8 @@
 path: "/blog/notes-user-stories-intro"
 date: "2018-11-08"
 title: "Notes from my UX class, user stories"
+featuredImage:
+  -"./images/user_flow.JPG"
 ---
 # Homework
 * Write summary of key research themes
