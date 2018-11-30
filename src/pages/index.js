@@ -63,6 +63,7 @@ render() {
 <ToDoList />
 <Notes data = { markdownData } />
     <Link to="/page-2/">Go to page 2</Link>
+    <br />
     <Link to="/blog/">Blog</Link>
   </Layout>
   )
@@ -89,3 +90,6 @@ export const pageQuery = graphql`
   }
 `
 // with graphql queries you must make the query in the top commponent or at the index/app level then pass the results of the query to the child components as props
+// Aliasing
+// Want to run two queries on the same datasource? You can do this by aliasing your queries. See below for an example:
+// https://www.gatsbyjs.org/docs/graphql-reference/

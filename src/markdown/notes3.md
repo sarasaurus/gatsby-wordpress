@@ -2,6 +2,11 @@
 path: "/blog/notes-ideation"
 date: "2018-11-15"
 title: "Notes from my UX class, day 3: ideation"
+attachments: 
+  - "../images/user_flow.JPG"
+  -"../images/user_problems_1.JPG"
+  -"../images/user_problems_2.JPG"
+  -"../images/user_problems_3.JPG"
 ---
 ### Day 3
 #### User Stories
@@ -48,12 +53,28 @@ ex: Create a bagging experience that is sos inturitive it makes everyone feel li
 * create a no-barcode navigation system that is as easy as scanning a code 
 
 #### Brainstorm solutions
+We wrote some of the things we came up with in the "How Might We.." section on stickys and organized them on the white board... then we wrote possible solutions on sticky notes around some of the 'how might we' propositions.
+
+![us looking at our sticky notes](../images/user_problems_3.JPG "User problem sticky")
+_here we are looking at our notes_  
+
+![sticky notes user problems](../images/user_problems_1.JPG "User problem sticky")
+![sticky notes user problems](../images/user_problems_2.JPG "User problem sticky")
 #### Story board solution
+![sticky notes user flow](../images/user_flow.JPG "User flow diagram")
+Once we'd come up with some proposed solutions we all returned to our seats to storyboard out some of/one of our proposed solutions-- what would that look like for the user? What is the first, second, third step etc
+
 #### Sketches and wireframes
 * visual representation of functional requirements 
 * limited use of color and graphics 
 * sample text or lorem ipsom
 * they allow you to test a flow or process without the user getting caught up on details
 * good to look unfinished that way testers focus on the steps
-* 
 
+
+#### HOMEWORK DUE WEEK 4:
+Homework is to create a wireframe of one of the solutions
+My plan was to design the screens that the user would be seeing-- but now I'm thinking I need to design some of the experience as well, if we use the image recognition one-- how exactly will that work, at what point will the machine prompt with image recognition? will the screen get too cluttered?
+* I've taken some photos of current self checkout screens
+
+* TODO: use gatsby to create a page that just displays all the images in the UX_class folder-- and transforms them into thumbnails
