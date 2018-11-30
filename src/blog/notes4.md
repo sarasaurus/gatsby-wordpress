@@ -1,7 +1,7 @@
 ---
 path: "/blog/notes-prototyping"
 date: "2018-11-29"
-title: "Notes from my UX class, day 3: prototyping"
+title: "Notes from my UX class, day 4: prototyping"
 ---
 
 #### Homework Review
