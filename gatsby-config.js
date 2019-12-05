@@ -4,6 +4,31 @@ module.exports = {
     title: 'Sarah Bixler',
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/blog`,
+        name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 590,
+            },
+          }
+        ],
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
@@ -39,7 +64,7 @@ module.exports = {
           // in order to do that you need to create an app (of type Web) at https://developer.wordpress.com/apps/
           // then add your clientId, clientSecret, username, and password here
           wpcom_app_clientSecret:
-            process.env.CLIENT_SECRET,
+          process.env.CLIENT_SECRET,
           wpcom_app_clientId: process.env.CLIENT_ID,
           wpcom_user: process.env.WP_USER,
           wpcom_pass: process.env.WP_PASS,

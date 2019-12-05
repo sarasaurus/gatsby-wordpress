@@ -25,6 +25,31 @@
         "path": "/blog/"
     },
     {
+        "componentChunkName": "component---src-templates-blog-template-js",
+        "jsonName": "blog-notes-ideation-6f4",
+        "path": "/blog/notes-ideation"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-template-js",
+        "jsonName": "blog-notes-prototyping-fd2",
+        "path": "/blog/notes-prototyping"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-template-js",
+        "jsonName": "blog-notes-user-research-hwk-b54",
+        "path": "/blog/notes-user-research-hwk"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-template-js",
+        "jsonName": "blog-notes-user-stories-hwk-f0a",
+        "path": "/blog/notes-user-stories-hwk"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-template-js",
+        "jsonName": "blog-notes-user-stories-intro-d97",
+        "path": "/blog/notes-user-stories-intro"
+    },
+    {
         "componentChunkName": "component---cache-dev-404-page-js",
         "jsonName": "dev-404-page-5f9",
         "path": "/dev-404-page/"

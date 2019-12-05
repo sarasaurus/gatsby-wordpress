@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import uuid from 'uuid';
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import ToDoList from '../components/todo-list'
 import Notes from '../components/notes'
 class IndexPage extends Component {
+  // you only need a to call super (props) if you have a constructor... do you only need a constructor for redux?
 render() {
+  console.log('INDEX DATA', this.props.data);
+  const markdownData= this.props.data;
   const uuidv4 = require('uuid/v4');
   const exampleSites= [
   <a href="https://portfolio.dangercode.net/">Danger Code</a>,
@@ -58,7 +61,9 @@ render() {
     })}
   </ul>
 <ToDoList />
-<Notes />
+{/* <Notes data = { markdownData } /> */}
+    <Link to="/blog/">Blog</Link>
+    <br />
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
   )
@@ -66,3 +71,26 @@ render() {
 }
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            path
+            title
+            
+          }
+        }
+      }
+    }
+  }
+`
+// with graphql queries you must make the query in the top commponent or at the index/app level then pass the results of the query to the child components as props
+// Aliasing
+// Want to run two queries on the same datasource? You can do this by aliasing your queries. See below for an example:
+// https://www.gatsbyjs.org/docs/graphql-reference/
