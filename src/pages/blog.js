@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 
 class Blog extends Component {
   render () {
-    console.log('BLOG DATA', this.props.data);
+    console.log('BLOG DATA', this.props.data.allMarkdownRemark);
     return (
       <Layout>
       <h1>Blog Posts</h1>
@@ -32,6 +32,8 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             title
+            featuredImage
+            attachments
           }
         }
       }

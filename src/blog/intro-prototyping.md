@@ -2,13 +2,12 @@
 path: "/blog/notes-prototyping"
 date: "2018-11-28"
 title: "Introduction to Prototyping"
-featuredImage:
-  -"./images/user_flow.JPG"
+featuredImage: "./images/user_flow.JPG"
 attachments: 
-  -"./images/user_flow.JPG"
-  -"./images/user_problems_1.JPG"
-  -"./images/user_problems_2.JPG"
-  -"./images/user_problems_3.JPG"
+"./images/user_flow.JPG"
+"./images/user_problems_1.JPG"
+"./images/user_problems_2.JPG"
+"./images/user_problems_3.JPG"
 ---
 ## Week 3 in Class
 ![us looking at our sticky notes](./images/user_problems_3.JPG "User problem sticky")

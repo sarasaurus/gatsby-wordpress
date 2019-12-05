@@ -64,7 +64,7 @@ module.exports = {
           // in order to do that you need to create an app (of type Web) at https://developer.wordpress.com/apps/
           // then add your clientId, clientSecret, username, and password here
           wpcom_app_clientSecret:
-            process.env.CLIENT_SECRET,
+          process.env.CLIENT_SECRET,
           wpcom_app_clientId: process.env.CLIENT_ID,
           wpcom_user: process.env.WP_USER,
           wpcom_pass: process.env.WP_PASS,
